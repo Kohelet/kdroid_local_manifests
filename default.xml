@@ -4,9 +4,11 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+  <remote name="github"
+	  fetch="ssh://git@github.com:Kohelet/"  />
   <default revision="master"
            remote="aosp"
-           sync-j="4" />
+           sync-j="8" />
 
   <manifest-server url="http://android-smartsync.corp.google.com/android.googlesource.com/manifestserver" />
 
