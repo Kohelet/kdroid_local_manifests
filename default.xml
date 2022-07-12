@@ -1079,7 +1079,7 @@
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
   <project path="system/bpf" name="platform/system/bpf" groups="pdk" />
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" />
-  <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
+  <project path="system/ca-certificates" name="kdroid_ca-certificates" remote="github" revision="kdroid" />
   <project path="system/chre" name="platform/system/chre" groups="pdk" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
