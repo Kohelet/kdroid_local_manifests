@@ -5,7 +5,7 @@
            fetch=".."
            review="https://android-review.googlesource.com/" />
   <remote name="github"
-	  fetch="ssh://git@github.com:Kohelet/"  />
+	  fetch="https://github.com/Kohelet/"  />
   <remote name="opengapps-gitlab" 
 	  fetch="https://gitlab.opengapps.org/opengapps/"  />
   <default revision="master"
