@@ -1183,6 +1183,16 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+  <!-- We're gonna make our own changes to the build scripts for OpenGapps and such -->
+  <project path="vendor/opengapps/build" name="kdroid_opengapps_aosp_build" revision="kdroid" remote="github" />
+
+  <!-- OpenGapps -->
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <!-- arm64 depends on arm -->
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+  <project path="vendor/opengapps/sources/x86_64" name="x86_64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
