@@ -3,10 +3,6 @@
 
   <remote name="github"
 	  fetch="https://github.com/Kohelet/"  />
-  <default revision="kdroid"
-           remote="github"
-           sync-j="8" />
-
 
 <!-- Replace default build tooling -->
   <remote-project path="build/make" name="platform/build" />
