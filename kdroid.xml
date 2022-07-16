@@ -3,9 +3,6 @@
 
   <remote name="github"
 	  fetch="https://github.com/Kohelet/"  />
-  <remote name="opengapps-gitlab" 
-	  fetch="https://gitlab.opengapps.org/opengapps/"  />
-
   <default revision="kdroid"
            remote="github"
            sync-j="8" />
@@ -29,15 +26,4 @@
   <remote-project path="system/ca-certificates" name="platform/system/ca-certificates" />
   <project path="system/ca-certificates" name="kdroid_ca-certificates" remote="github" revision="kdroid" />
   
-<!-- Gapps Stuff -->
-  <project path="vendor/opengapps/build" name="kdroid_opengapps_aosp_build" revision="kdroid" remote="github" />
-
-  <!-- OpenGapps -->
-  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-  <!-- arm64 depends on arm -->
-  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-  <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-  <project path="vendor/opengapps/sources/x86_64" name="x86_64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
-
 </manifest>
