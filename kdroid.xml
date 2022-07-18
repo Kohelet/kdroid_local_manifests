@@ -5,7 +5,7 @@
 	  fetch="https://github.com/Kohelet/"  />
 
 <!-- Replace default build tooling -->
-  <remote-project path="build/make" name="platform/build" />
+  <remove-project path="build/make" name="platform/build" />
   <project path="build/make" name="kdroid_platform_build" remote="github" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -19,7 +19,7 @@
   <project path="branding" name="kdroid_bootanimation" remote="github" revision="default" />
   
 <!-- Bring in custom ca-certs -->
-  <remote-project path="system/ca-certificates" name="platform/system/ca-certificates" />
+  <remove-project path="system/ca-certificates" name="platform/system/ca-certificates" />
   <project path="system/ca-certificates" name="kdroid_ca-certificates" remote="github" revision="kdroid" />
   
 </manifest>
