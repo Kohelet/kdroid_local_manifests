@@ -6,7 +6,7 @@
   <remote name="opengapps-gitlab" 
 	  fetch="https://gitlab.opengapps.org/opengapps/"  />
 
-<!-- Replace default build tooling -->
+<!-- Replace default build tooling
   <remove-project path="build/make" name="platform/build" />
   <project path="build/make" name="kdroid_platform_build" remote="github" revision="kdroid_w/gapps">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -16,7 +16,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-
+  -->
 <!-- Bring in custom bootanimation -->
   <project path="branding" name="kdroid_bootanimation" remote="github" revision="default" />
   
